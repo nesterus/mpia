@@ -1,0 +1,19 @@
+name: mpia_cpu
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - scipy
+  - opencv
+  - albumentations
+  - scikit-image
+  - scikit-learn
+  - shapely
+  - seaborn
+  - colorama
+  - matplotlib
+  - pycocotools
+  - statsmodels
+  - ipykernel
+prefix: /home/user/conda/envs/mpia_cpu

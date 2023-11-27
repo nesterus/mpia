@@ -1,0 +1,24 @@
+{
+    "device": "cpu",
+    "composition_mode": "modification",
+    "blending_mode": "base",
+    "object_prefix": "plant_",
+    "dataset_names": [
+        "Tomato detection"
+    ],
+    "result_sizes": [
+        [640, 640]
+    ],
+    "force_repreparation": false,
+    "augmentations_config_path": "./configs/augmentation_config.py",
+    "background_generation": {
+        "storage_path": "./tmp_data/background_storage/",
+        "requires_model": true,
+        "samples_per_dataset": 3
+    },
+    "sampling": {
+        "num_objects_per_image": "random_from_data",
+        "object_schema_mode": "random_from_data"
+    },
+    "object_placement": "uniform_2d"
+}
