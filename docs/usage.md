@@ -44,6 +44,8 @@ tag_nums – определяет, к какому объекту относит
 
 Примеры запусков различных базовых режимов аугментации можно найти в [ноутбуке pipeline_modes](../pipeline_modes.ipynb)
 
+Для быстрого запуска можно воспользоваться версией ноутбука для google colab:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SQzDHct0G3PFxmuEgeMV3EVx31xickep?usp=sharing)
 
 Точной входа является класс *Pipeline*. Он принимает на вход путь к конфигурационному файлу *project_config_path*.
 

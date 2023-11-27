@@ -52,6 +52,8 @@ $PYTHON_BASE -m ipykernel install --user --name mpia --display-name "multipart-i
 
 Для настройки и использования библиотеки в google colab, воспользуйтесь подготовленными ноутбуками с примерами. 
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SQzDHct0G3PFxmuEgeMV3EVx31xickep?usp=sharing)
+
 В colab будет достаточно выполнить команды:
 ```python
 !git clone https://github.com/nesterus/mpia.git
