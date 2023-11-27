@@ -54,7 +54,7 @@ $PYTHON_BASE -m ipykernel install --user --name mpia --display-name "multipart-i
 
 В colab будет достаточно выполнить команды:
 ```python
-!git https://github.com/nesterus/mpia.git
+!git clone https://github.com/nesterus/mpia.git
 
 import sys
 sys.path.append('./mpia')
