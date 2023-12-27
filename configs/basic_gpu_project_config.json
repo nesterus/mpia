@@ -18,7 +18,8 @@
     },
     "sampling": {
         "num_objects_per_image": "random_from_data",
-        "object_schema_mode": "random_from_data"
+        "object_schema_mode": "random_from_data",
+        "max_parts_per_object": 10
     },
     "object_placement": "uniform_2d"
 }

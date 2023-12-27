@@ -67,10 +67,9 @@ class Pipeline:
         for dataset_name in self.project_config['dataset_names']:
             create_stat_report(dataset_name) # create pdf files with statistics for dataset
         
-    def run(self, num_objects=4):
+    def run(self, num_objects=4, return_at_least_one=True, max_reties=10):
         ''' Makes single augmented image '''
         mode = self.project_config['composition_mode']
-        
         background_image = self.background_sampler.sample_from_folder()
         if not num_objects:
             num_objects = self.feature_sampler.sample_objects_num()
@@ -97,7 +96,6 @@ class Pipeline:
                 for part_type in object_schema:
                     for part_idx, part in enumerate(object_schema[part_type]):
                         parts_data[part_type][part_idx]['target_coords'] = object_schema[part_type][part_idx]['target_coords']
-                
                 parts_data = augment_object_schema(parts_data)
                 parts_data = self._transform_parts_to_target(parts_data)
                 
@@ -106,6 +104,12 @@ class Pipeline:
             raise ValueError('mode {} id not supproted'.format(mode))
                 
         generated_scene, mask_part_list = self.scene_composer.compose_img(objects_list, background_image)
+        
+        if len(mask_part_list[0]) < 1 and return_at_least_one and max_reties:
+            if self.project_config['verbose']:
+                print('Bad object placement. Retrying.')
+            return self.run(num_objects=num_objects, return_at_least_one=True, max_reties=max_reties-1)
+        
         return generated_scene, mask_part_list
         
     def _transform_parts_to_target(self, object_schema):

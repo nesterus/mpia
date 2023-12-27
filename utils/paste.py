@@ -18,7 +18,7 @@ def paste_object_simple(background, source, source_mask, x, y):
 
 def paste_object_poisson(background, source, source_mask, x, y):
     CPU_COUNT = os.cpu_count() or 1
-    DEFAULT_BACKEND = "cuda"
+    DEFAULT_BACKEND = "taichi-gpu"
     proc = GridProcessor(
         gradient="max",
         backend=DEFAULT_BACKEND,

@@ -21,9 +21,14 @@ class ObjectSampler:
             with open(project_config_path, 'r') as f:
                 self.project_config = json.loads(f.read())
         
-    def sample_object(self, df):
-        real_random_obj_name = random.choice(df['obj_id'].unique())
-        real_plant = df[df['obj_id'] == real_random_obj_name]
+    def sample_object(self, df, max_retries=50):
+        for _ in range(max_retries):
+            real_random_obj_name = random.choice(df['obj_id'].unique())
+            real_plant = df[df['obj_id'] == real_random_obj_name]
+            parts_ids = real_plant['id_names'].to_list()
+            
+            if len(parts_ids) <= self.project_config['sampling']['max_parts_per_object']:
+                break
         
         dataset_dir = './datasets/{}/{}/'.format(real_plant['dataset'].values[0], real_plant['dataset'].values[0])
         
@@ -31,9 +36,9 @@ class ObjectSampler:
         file = str(real_plant['img_id'].values[0]) + '.{}_mpta.json'.format(img_format)
         file_path = open(dataset_dir + 'ann/' + file)
         file_stat = json.load(file_path)
-
+        
         parts_list = list()
-        parts_ids = real_plant['id_names'].to_list() 
+         
         for parts_id in parts_ids:
             part_dict = {}
             i = int(parts_id.split('_')[-1]) # part id
@@ -42,7 +47,7 @@ class ObjectSampler:
             mask = (mask > 0).astype(np.uint8)
             mask_crop = crop_obj_bb(mask, mask)
             part_dict['mask'] = mask_crop
-
+            
             img = cv2.imread(dataset_dir + 'img/' + str(real_plant['img_id'].values[0]) + '.' + img_format)
             img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
             img = crop_obj_bb(img, mask)
