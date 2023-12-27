@@ -16,12 +16,11 @@ def paste_object_simple(background, source, source_mask, x, y):
     return np.array(background)
 
 
-def paste_object_poisson(background, source, source_mask, x, y):
+def paste_object_poisson(background, source, source_mask, x, y, backend):
     CPU_COUNT = os.cpu_count() or 1
-    DEFAULT_BACKEND = "taichi-gpu"
     proc = GridProcessor(
         gradient="max",
-        backend=DEFAULT_BACKEND,
+        backend=backend,
         n_cpu=CPU_COUNT,
         min_interval=100,
         block_size=1024,
@@ -42,7 +41,7 @@ def paste_object_poisson(background, source, source_mask, x, y):
     source_mask = source_mask[:y_max, :x_max, :]
     
     n = proc.reset(source, source_mask, background, (0, 0), (y, x))
-    n = 5000 #3000
+    n = 3000 if 'num' in backend else 5000
     p = 1
     proc.sync()
     

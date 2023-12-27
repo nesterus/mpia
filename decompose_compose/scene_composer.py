@@ -248,7 +248,11 @@ def _insert_obj2background(obj_dict, background, y0_center, x0_center, obj_id, b
     if blending_mode == 'poisson':
         source = img_ext
         source_mask = ((mask_ext > 0) * 255).astype(np.uint8)
-        background = paste_object_poisson(background.astype(np.uint8), source.astype(np.uint8), source_mask.astype(np.uint8), x=0, y=0)
+        
+        try:
+            background = paste_object_poisson(background.astype(np.uint8), source.astype(np.uint8), source_mask.astype(np.uint8), x=0, y=0, backend="taichi-gpu")
+        except:
+            background = paste_object_poisson(background.astype(np.uint8), source.astype(np.uint8), source_mask.astype(np.uint8), x=0, y=0, backend="numpy")
 
     if blending_mode == 'base':
         img_new = np.where(np.dstack([mask_ext>0]*ch_dim), img_ext * np.dstack([mask_ext>0]*ch_dim), background)
