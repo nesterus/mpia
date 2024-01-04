@@ -30,7 +30,9 @@ sys.path.append('./mpia')
 !pip install -r requirements.txt
 ```
 
+Ноутбук с примером предобработки данных через Google Colab:
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nyRjj-4mzZlKkGybkQFLpsH7D6twptpV?usp=sharing)
 
 
 
