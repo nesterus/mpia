@@ -1,0 +1,9 @@
+path: tomato_dataset
+train: images/train
+val: images/val
+
+names:
+  2: leaf
+  3: tomato
+
+nc: 2
