@@ -2,15 +2,15 @@
 
 Список подготовленных и размеченных датасетов:
 
-1. Cassava Leaf Disease (https://disk.yandex.ru/d/ubDyzqG8x8vfNg)
-2. Corn or Maize Leaf Disease (https://disk.yandex.ru/d/FtydQWrF6kWoEQ)
-3. Flower classification (https://disk.yandex.ru/d/CXNN63kmrpGSaA)
-4. Fruit plants (https://disk.yandex.ru/d/MHDJiO2Nxe8q6A)
-5. Herbarium (https://disk.yandex.ru/d/z0F-1IRUuelS8A)
-6. Plant Pathology (https://disk.yandex.ru/d/1RZHS2sCBgRpTA)
-7. Satellite images (https://disk.yandex.ru/d/8Nb5E0DyQ4PlHQ)
-8. Tomato detection (https://disk.yandex.ru/d/jNBpqd_KPPTb6Q)
-9. Wild Edible Plants (https://disk.yandex.ru/d/9Ep8-QB2JW1QAg)
+1. [Cassava Leaf Disease](https://disk.yandex.ru/d/ubDyzqG8x8vfNg)
+2. [Corn or Maize Leaf Disease](https://disk.yandex.ru/d/FtydQWrF6kWoEQ)
+3. [Flower classification](https://disk.yandex.ru/d/CXNN63kmrpGSaA)
+4. [Fruit plants](https://disk.yandex.ru/d/MHDJiO2Nxe8q6A)
+5. [Herbarium](https://disk.yandex.ru/d/z0F-1IRUuelS8A)
+6. [Plant Pathology](https://disk.yandex.ru/d/1RZHS2sCBgRpTA)
+7. [Satellite images](https://disk.yandex.ru/d/8Nb5E0DyQ4PlHQ)
+8. [Tomato detection](https://disk.yandex.ru/d/jNBpqd_KPPTb6Q)
+9. [Wild Edible Plants](https://disk.yandex.ru/d/9Ep8-QB2JW1QAg)
 
 
 ## Описание общей структуры датасетов:
