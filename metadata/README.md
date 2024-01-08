@@ -17,7 +17,8 @@ object_type2properties - какие типы свойств могут быть 
 
 Примеры классов, их идентификаторов и свойств, представленных в датасетах:
 
-```object_type = {"background": 0,
+```
+object_type = {"background": 0,
               "stem": 1,  
               "leaf": 2, 
               "fruit": 3,
@@ -28,10 +29,10 @@ object_type2properties - какие типы свойств могут быть 
               "building": 8,
               "tree": 9,
               "road": 10,
-              "other": 11}```
+              "other": 11}
 
 
-```object_type_ru = {"фон": 0,
+object_type_ru = {"фон": 0,
               "стебель": 1,  
               "лист": 2, 
               "фрукт": 3,
@@ -42,9 +43,9 @@ object_type2properties - какие типы свойств могут быть 
               "здание": 8,
               "дерево": 9,
               "дорога": 10,
-              "прочее": 11}```
+              "прочее": 11}
 
-```properties = {"condition": ["healthy", "dried", "diseased", "rotten", "partially damaged"],
+properties = {"condition": ["healthy", "dried", "diseased", "rotten", "partially damaged"],
               "type": ["herbaceous", "woody"],
               "ierarchy": ["main",  "side"],
               "group": ["single", "group"],
@@ -52,7 +53,8 @@ object_type2properties - какие типы свойств могут быть 
               "ripeness": ["ripe", "unripe"],
               "stage": ["growing", "harvested", "packed"],
               "integrity": ["whole", "cutted"] 
-             }```
+             }
+```
              
 
 #### Добавление названий классов в аннотацию
