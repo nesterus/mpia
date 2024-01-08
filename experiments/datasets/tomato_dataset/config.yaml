@@ -3,7 +3,7 @@ train: images/train
 val: images/val
 
 names:
-  2: leaf
-  3: tomato
+  0: leaf
+  1: tomato
 
 nc: 2
