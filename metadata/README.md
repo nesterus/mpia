@@ -17,6 +17,7 @@ object_type2properties - какие типы свойств могут быть 
 
 Примеры классов, их идентификаторов и свойств, представленных в датасетах:
 
+
 ```
 object_type = {"background": 0,
               "stem": 1,  
@@ -55,7 +56,7 @@ properties = {"condition": ["healthy", "dried", "diseased", "rotten", "partially
               "integrity": ["whole", "cutted"] 
              }
 ```
-             
+
 
 #### Добавление названий классов в аннотацию
 
