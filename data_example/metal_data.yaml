@@ -1,0 +1,6 @@
+train: /content/gen_metal/train
+val: /content/gen_metal/val
+test: /content/gen_metal/test
+
+nc: 2
+names: ['metal', 'rust']

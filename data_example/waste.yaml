@@ -1,0 +1,6 @@
+train: /content/gen_waste/train
+val: /content/gen_waste/val
+test: /content/gen_waste/test
+
+nc: 2
+names: ['waste','pollutant']

@@ -1,0 +1,6 @@
+train: /content/gen_minerals/train
+val: /content/gen_minerals/val
+test: /content/gen_minerals/test
+
+nc: 2
+names: ['syst','op']
