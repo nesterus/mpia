@@ -96,12 +96,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 ```bash
 sudo apt update && sudo apt upgrade -y
-sudo apt install python3.10 -y
+sudo apt install python3.11 -y
 sudo apt install python3-pip -y
-sudo apt install python3.10-venv -y
+sudo apt install python3.11-venv -y
 sudo apt install cmake -y
 ```
 
+Если установлен Python версии ниже 3.9, рекомендуется его обновить. 
 Далее можно устанавливать саму библиотеку в виртуальном окружении:
 
 
