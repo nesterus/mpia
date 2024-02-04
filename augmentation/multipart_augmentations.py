@@ -32,6 +32,14 @@ class DatasetAugmentor:
                     
         return augmented_objects_list
     
+    def augment_background(self, img):
+        for aug in self.augmentation_config['aug_list']:
+            if self._is_aug_applicable(obj=None, aug=aug, level='background'):
+                transform = aug['pipeline']
+                transformed = transform(image=img)  
+                return transformed['image']
+        return img
+    
     def _is_aug_applicable(self, obj, aug, level='object_part'):
         if level not in aug['target']:
             return False
@@ -83,7 +91,7 @@ class DatasetAugmentor:
         
         return new_obj_dict
 
-    def augment_part(self, part_obj):        
+    def augment_part(self, part_obj):  
         if 'sampled_parts' not in part_obj:
             return part_obj
         

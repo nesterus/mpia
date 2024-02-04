@@ -41,7 +41,7 @@ class Pipeline:
         self.part_sampler = PartSampler(self.project_config, min_height=20, min_width=20)
         self.object_sampler = ObjectSampler(project_config=self.project_config)
         self.augmentor = DatasetAugmentor(project_config=self.project_config)
-        self.scene_composer = SceneComposer(project_config=self.project_config)
+        self.scene_composer = SceneComposer(project_config=self.project_config, augmentor=self.augmentor)
         
         if self.project_config['verbose'] >= 1:
             print(self.project_config)
@@ -71,6 +71,8 @@ class Pipeline:
         ''' Makes single augmented image '''
         mode = self.project_config['composition_mode']
         background_image = self.background_sampler.sample_from_folder()
+        background_image = self.augmentor.augment_background(background_image)
+        
         if not num_objects:
             num_objects = self.feature_sampler.sample_objects_num()
         
@@ -97,6 +99,11 @@ class Pipeline:
                     for part_idx, part in enumerate(object_schema[part_type]):
                         parts_data[part_type][part_idx]['target_coords'] = object_schema[part_type][part_idx]['target_coords']
                 parts_data = augment_object_schema(parts_data)
+                
+                for part_type_num in parts_data:
+                    for part_idx, part in enumerate(parts_data[part_type_num]):
+                        parts_data[part_type_num][part_idx] = self.augmentor.augment_part(part)
+                
                 parts_data = self._transform_parts_to_target(parts_data)
                 
                 objects_list.append(parts_data)

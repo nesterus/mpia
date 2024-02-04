@@ -265,7 +265,8 @@ class SceneComposer:
     def __init__(
         self, 
         project_config=None,
-        project_config_path=None
+        project_config_path=None,
+        augmentor=None
     ): 
         if project_config:
             self.project_config = project_config
@@ -273,10 +274,12 @@ class SceneComposer:
             with open(project_config_path, 'r') as f:
                 self.project_config = json.loads(f.read())
         
+        if augmentor is None:
+            augmentor = DatasetAugmentor(project_config=self.project_config)
+        self.augmentor = augmentor
+        
     def compose_img(self, objects, background):
         ''' Composes a new image based on a set of input objects and new background '''
-        Augmentor = DatasetAugmentor(project_config=self.project_config)
-
         num_objs = len(objects)
         h_background = background.shape[0]
         w_background = background.shape[1]
@@ -331,7 +334,7 @@ class SceneComposer:
             w = int(obj_dict['img'].shape[1] * ratio) - 1
 
             aug_r = {'pipeline': A.Compose([A.Resize(h, w, interpolation=4)])}
-            aug_obj_dict = Augmentor.augment_object(obj_dict, aug_r)
+            aug_obj_dict = self.augmentor.augment_object(obj_dict, aug_r)
             
             try:
                 img_new, mask_part_list = _insert_obj2background(aug_obj_dict, background, y0_center, x0_center, obj_id, self.project_config['blending_mode'])
