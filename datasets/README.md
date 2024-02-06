@@ -10,7 +10,7 @@
 6. [Plant Pathology](https://github.com/nesterus/mpia/tree/main/datasets/Plant%20Pathology/Plant%20Pathology) ([архив](https://disk.yandex.ru/d/1RZHS2sCBgRpTA))
 7. [Satellite images](https://github.com/nesterus/mpia/tree/main/datasets/satellite_images/satellite_images) ([архив](https://disk.yandex.ru/d/8Nb5E0DyQ4PlHQ))
 8. [Tomato detection](https://github.com/nesterus/mpia/tree/main/datasets/Tomato%20detection/Tomato%20detection) ([архив](https://disk.yandex.ru/d/jNBpqd_KPPTb6Q))
-9. [Wild Edible Plants](https://github.com/nesterus/mpia/tree/main/datasets/Wild%20Edible%20Plants/Wild%20Edible%20Plants) ([архив](https://disk.yandex.ru/d/9Ep8-QB2JW1QAg))
+9. [Wild Edible Plants](https://github.com/nesterus/mpia/tree/main/datasets/Wild%20Edible%20Plants/Wild%20Edible%20Plants) ([архив](https://disk.yandex.ru/d/xaaJ0GBx2_TtAQ))
 
 
 ## Описание общей структуры датасетов:
