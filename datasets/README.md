@@ -2,15 +2,15 @@
 
 Список подготовленных и размеченных датасетов:
 
-1. [Cassava Leaf Disease](https://disk.yandex.ru/d/ubDyzqG8x8vfNg)
-2. [Corn or Maize Leaf Disease](https://disk.yandex.ru/d/FtydQWrF6kWoEQ)
-3. [Flower classification](https://disk.yandex.ru/d/CXNN63kmrpGSaA)
-4. [Fruit plants](https://disk.yandex.ru/d/MHDJiO2Nxe8q6A)
-5. [Herbarium](https://disk.yandex.ru/d/z0F-1IRUuelS8A)
-6. [Plant Pathology](https://disk.yandex.ru/d/1RZHS2sCBgRpTA)
-7. [Satellite images](https://disk.yandex.ru/d/8Nb5E0DyQ4PlHQ)
-8. [Tomato detection](https://disk.yandex.ru/d/jNBpqd_KPPTb6Q)
-9. [Wild Edible Plants](https://disk.yandex.ru/d/9Ep8-QB2JW1QAg)
+1. [Cassava Leaf Disease](https://github.com/nesterus/mpia/tree/main/datasets/Cassava%20Leaf%20Disease/Cassava%20Leaf%20Disease) ([архив](https://disk.yandex.ru/d/ubDyzqG8x8vfNg))
+2. [Corn or Maize Leaf Disease](https://github.com/nesterus/mpia/tree/main/datasets/Corn%20or%20Maize%20Leaf%20Disease/Corn%20or%20Maize%20Leaf%20Disease) ([архив](https://disk.yandex.ru/d/FtydQWrF6kWoEQ))
+3. [Flower classification](https://github.com/nesterus/mpia/tree/main/datasets/flower_classification/flower_classification) ([архив](https://disk.yandex.ru/d/CXNN63kmrpGSaA))
+4. [Fruit plants](https://github.com/nesterus/mpia/tree/main/datasets/fruit_plants/fruit_plants) ([архив](https://disk.yandex.ru/d/MHDJiO2Nxe8q6A))
+5. [Herbarium](https://github.com/nesterus/mpia/tree/main/datasets/Herbarium/Herbarium) ([архив](https://disk.yandex.ru/d/z0F-1IRUuelS8A))
+6. [Plant Pathology](https://github.com/nesterus/mpia/tree/main/datasets/Plant%20Pathology/Plant%20Pathology) ([архив](https://disk.yandex.ru/d/1RZHS2sCBgRpTA))
+7. [Satellite images](https://github.com/nesterus/mpia/tree/main/datasets/satellite_images/satellite_images) ([архив](https://disk.yandex.ru/d/8Nb5E0DyQ4PlHQ))
+8. [Tomato detection](https://github.com/nesterus/mpia/tree/main/datasets/Tomato%20detection/Tomato%20detection) ([архив](https://disk.yandex.ru/d/jNBpqd_KPPTb6Q))
+9. [Wild Edible Plants](https://github.com/nesterus/mpia/tree/main/datasets/Wild%20Edible%20Plants/Wild%20Edible%20Plants) ([архив](https://disk.yandex.ru/d/9Ep8-QB2JW1QAg))
 
 
 ## Описание общей структуры датасетов:
@@ -19,7 +19,7 @@
 
 “img” — изображения
 
-“ann” — аннотация в общем для всех датасетов формате (расширение файлы json); каждому изображения соответствует свой файл с разметкой. Обработанные файлы с разметкой содержат в имени файла “_mpta” перед указанием расширения. В папке “ ann” также содержатся файлы со статистиками по датасету “stats_dists.csv”  и “norm_stats_dists.csv”. В директории кроме папок с аннотацией и изображениями также находятся файлы с рассчитанными статистиками “object_statistics.csv”, “part_statistics.csv”.
+“ann” — аннотация в общем для всех датасетов формате (расширение файлы json); каждому изображения соответствует свой файл с разметкой. Обработанные файлы с разметкой содержат в имени файла “_mpta” перед указанием расширения. В папке “ann” также содержатся файлы со статистиками по датасету “stats_dists.csv”  и “norm_stats_dists.csv”. В директории кроме папок с аннотацией и изображениями также находятся файлы с рассчитанными статистиками “object_statistics.csv”, “part_statistics.csv”.
 
 ## Описание датасетов
 
