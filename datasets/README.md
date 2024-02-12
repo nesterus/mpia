@@ -2,16 +2,16 @@
 
 Список подготовленных и размеченных датасетов:
 
-1. [Cassava Leaf Disease](https://github.com/nesterus/mpia/tree/main/datasets/Cassava%20Leaf%20Disease/Cassava%20Leaf%20Disease) ([архив](https://disk.yandex.ru/d/ubDyzqG8x8vfNg))
-2. [Corn or Maize Leaf Disease](https://github.com/nesterus/mpia/tree/main/datasets/Corn%20or%20Maize%20Leaf%20Disease/Corn%20or%20Maize%20Leaf%20Disease) ([архив](https://disk.yandex.ru/d/FtydQWrF6kWoEQ))
-3. [Flower classification](https://github.com/nesterus/mpia/tree/main/datasets/flower_classification/flower_classification) ([архив](https://disk.yandex.ru/d/CXNN63kmrpGSaA))
-4. [Fruit plants](https://github.com/nesterus/mpia/tree/main/datasets/fruit_plants/fruit_plants) ([архив](https://disk.yandex.ru/d/MHDJiO2Nxe8q6A))
-5. [Herbarium](https://github.com/nesterus/mpia/tree/main/datasets/Herbarium/Herbarium) ([архив](https://disk.yandex.ru/d/z0F-1IRUuelS8A))
-6. [Plant Pathology](https://github.com/nesterus/mpia/tree/main/datasets/Plant%20Pathology/Plant%20Pathology) ([архив](https://disk.yandex.ru/d/1RZHS2sCBgRpTA))
+1. [Cassava Leaf Disease](https://github.com/nesterus/mpia/tree/main/datasets/Cassava%20Leaf%20Disease/Cassava%20Leaf%20Disease) ([архив](https://disk.yandex.ru/d/ubDyzqG8x8vfNg))[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dtBwF3C1ozAfCC6_U-RoEI5_4wU8-QHX?usp=sharing) 
+2. [Corn or Maize Leaf Disease](https://github.com/nesterus/mpia/tree/main/datasets/Corn%20or%20Maize%20Leaf%20Disease/Corn%20or%20Maize%20Leaf%20Disease) ([архив](https://disk.yandex.ru/d/FtydQWrF6kWoEQ)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oJuxEi1UMIUbBvcHoURcFDslAIHIREau?usp=sharing) 
+3. [Flower classification](https://github.com/nesterus/mpia/tree/main/datasets/flower_classification/flower_classification) ([архив](https://disk.yandex.ru/d/CXNN63kmrpGSaA)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zoHT5B72s-yymMGxJmupg4-ES0x0_2Hw?usp=sharing) 
+4. [Fruit plants](https://github.com/nesterus/mpia/tree/main/datasets/fruit_plants/fruit_plants) ([архив](https://disk.yandex.ru/d/MHDJiO2Nxe8q6A)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uRtSfoKhB8lTsTrpAk8Y-UutIykLmwaw?usp=sharing) 
+5. [Herbarium](https://github.com/nesterus/mpia/tree/main/datasets/Herbarium/Herbarium) ([архив](https://disk.yandex.ru/d/z0F-1IRUuelS8A)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UNLepp1oVanuq2VRpzbZyqq2lOYoNJgT?usp=sharing) 
+6. [Plant Pathology](https://github.com/nesterus/mpia/tree/main/datasets/Plant%20Pathology/Plant%20Pathology) ([архив](https://disk.yandex.ru/d/1RZHS2sCBgRpTA)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uu3dq3zXXtmTm2HmrxSRxLBGXuVIeo_X?usp=sharing) 
 7. [Satellite images](https://github.com/nesterus/mpia/tree/main/datasets/satellite_images/satellite_images) ([архив](https://disk.yandex.ru/d/8Nb5E0DyQ4PlHQ))
-8. [Tomato detection](https://github.com/nesterus/mpia/tree/main/datasets/Tomato%20detection/Tomato%20detection) ([архив](https://disk.yandex.ru/d/jNBpqd_KPPTb6Q))
-9. [Wild Edible Plants](https://github.com/nesterus/mpia/tree/main/datasets/Wild%20Edible%20Plants/Wild%20Edible%20Plants) ([архив](https://disk.yandex.ru/d/xaaJ0GBx2_TtAQ))
-
+8. [Tomato detection](https://github.com/nesterus/mpia/tree/main/datasets/Tomato%20detection/Tomato%20detection) ([архив](https://disk.yandex.ru/d/jNBpqd_KPPTb6Q)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UU_p00ELm6T15suTiBAYJup3gSb9zxeP?usp=sharing) 
+9. [Wild Edible Plants](https://github.com/nesterus/mpia/tree/main/datasets/Wild%20Edible%20Plants/Wild%20Edible%20Plants) ([архив](https://disk.yandex.ru/d/xaaJ0GBx2_TtAQ)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KWU0eEx3KENUhi1G5HUdQ-RBV6Je4792?usp=sharing) 
+10. [Soy](https://github.com/nesterus/mpia/tree/main/datasets/soy/soy) ([архив](https://disk.yandex.ru/d/n5TYf7jQPjIyCA)) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1t9Peq6sHzTFfbmo4VmWz77oapFqdft4_?usp=sharing) 
 
 ## Описание общей структуры датасетов:
 
@@ -130,6 +130,18 @@
 - листьев: 781
 - цветов: 560
 - больных: 31
+
+10. Soy
+
+Фотографии кустов, на которых можно выделить стебель и листья. Интересна структура расположения листьев на стебле. Есть немного засохших элементов. Была отобрана 251 фотография.
+
+Размечено:
+
+- растений: 1394
+- стеблей: 1493
+- листьев: 7674
+- усохших: 169
+
 
 ## Описание вспомогательных файлов и содержащихся в них параметров:
 
