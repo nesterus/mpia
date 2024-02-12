@@ -217,4 +217,7 @@ class FeatureSampler:
         complex_df = df[df['is_complex_object']]
         simple_df = df[~df['is_complex_object']]
         
+        if len(complex_df) == 0:
+            complex_df = orig_df
+        
         return complex_df, simple_df
