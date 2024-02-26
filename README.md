@@ -101,7 +101,7 @@ sudo apt install python3-pip -y
 sudo apt install python3.11-venv -y
 sudo apt install cmake -y
 ```
-Или скачайте и установите Python вручную на [официальном сайте Python]([https://docs.docker.com/engine/reference/commandline/build/](https://www.python.org/downloads/)).
+Или скачайте и установите Python вручную на [официальном сайте Python](https://www.python.org/downloads/).
 Если установлен Python версии ниже 3.9, рекомендуется его обновить. Рекомендуемая версия Python3.11.7.
 
 Далее можно устанавливать саму библиотеку в виртуальном окружении:
